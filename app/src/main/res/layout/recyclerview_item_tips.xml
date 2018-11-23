@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:clickable="true"
+    android:foreground="@drawable/water_ripple_foreground"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_item_tip"
+        android:layout_weight="0.9"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="some tips"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:layout_weight="0.1"
+        android:id="@+id/check_box_tip"
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

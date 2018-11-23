@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SplashActivity">
+
+    <LinearLayout
+        android:clickable="true"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:foreground="@drawable/water_ripple_foreground"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/linear_page1_webiew"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:text="water ripple"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:text="@string/splash_slogan"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:id="@+id/tv_mushiny"
+        android:layout_alignParentBottom="true"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_company"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tv_mushiny"
+        android:text="牧星智能"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tv_company"
+        android:src="@mipmap/splash_icon_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

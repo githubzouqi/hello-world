@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_rcs_tip"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:text="提示"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_rcs_carIdInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="请输入小车的id"
+            android:inputType="number"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:background="@drawable/edittext_layer_drawable"
+            android:layout_width="match_parent"
+            android:id="@+id/et_rcs_carIdInput"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_chargingPileError"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_rcs_chargerType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="请输入充电桩类型"
+            android:inputType="text"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:background="@drawable/edittext_layer_drawable"
+            android:layout_width="match_parent"
+            android:id="@+id/et_rcs_chargerType"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_rcs_chargerId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="请输入充电桩的id"
+            android:inputType="number"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:background="@drawable/edittext_layer_drawable"
+            android:layout_width="match_parent"
+            android:id="@+id/et_rcs_chargerId"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_rcs_podId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="请输入货架 ID"
+            android:inputType="number"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:background="@drawable/edittext_layer_drawable"
+            android:layout_width="match_parent"
+            android:id="@+id/et_rcs_podId"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_rcs_addressCodeId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="请输入目标地址码"
+            android:inputType="number"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:background="@drawable/edittext_layer_drawable"
+            android:layout_width="match_parent"
+            android:id="@+id/et_rcs_addressCodeId"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:foreground="@drawable/water_ripple_foreground"
+        android:background="@drawable/button_selector_rect"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:text="确定"
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
